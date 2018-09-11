@@ -7,7 +7,11 @@
  * @notions Data-Structures, Get, Set
  */
 
-// Your code :
+
+
+let circular = {}
+circular.circular = circular
+
 
 //* Begin of tests
 const assert = require('assert')
