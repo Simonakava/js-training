@@ -5,7 +5,19 @@
  * and return a string of all the element separated by a space
  *
  */
+function sentence(tab){
+    var toto = "";
+    var newStr = "";
+    for (let index = 0; index < tab.length; index++) {
+        toto = tab[index] + toto; 
+    }
+    for (var i = toto.length - 1; i >= 0; i--) { 
+        newStr = newStr  + toto[i]+ " "; // or newString = newString + str[i];
+    }
+    
 
+    return newStr;
+}
 
 //* Begin of tests
 const assert = require('assert')

@@ -5,6 +5,17 @@
  * and return the total
  *
  */
+var sum = 0;
+function total(tab){
+      var sum = 0;
+
+    for(var i = 0; i < tab.length; i++){
+        sum += tab[i]
+    }
+    return sum
+
+
+}
 
 
 //* Begin of tests
