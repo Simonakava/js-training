@@ -8,11 +8,23 @@
  */
 
 // Provided code :
-const sourceObject = {
-  num: 42,
-  bool: true,
-  str: 'some text',
-  log: console.log,
+function get(keys){
+  const sourceObject = {
+    num: 42,
+    bool: true,
+    str: 'some text',
+    log: console.log,
+
+  }
+  if (keys === 'num')
+    return sourceObject.num;
+  else if (keys === 'bool')
+    return sourceObject.bool;
+  else if (keys === 'str')
+    return sourceObject.str;
+  else if (keys === 'log')
+    return console.log;
+
 }
 
 // Your code :

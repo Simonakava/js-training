@@ -8,6 +8,17 @@
  */
 
 // Your code :
+function getLast(tab){
+    var sum = 0;
+
+    if(tab.length === 0){
+        return undefined;
+    }
+    for (let index = 0; index < tab.length; index++) {
+        sum = tab[index];
+    }
+    return sum;
+}
 
 //* Begin of tests
 const assert = require('assert')

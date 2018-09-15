@@ -8,7 +8,15 @@
  */
 
 // Your code :
-
+function getLength(tab){
+    var sum = 0;
+    for (let index = 0; index < tab.length; index++) {
+       sum = index + 1;
+       
+        
+    }
+    return sum;
+}
 //* Begin of tests
 const assert = require('assert')
 

@@ -8,6 +8,11 @@
  */
 
 // Your code :
+function getFirst(tab){
+
+    return tab[0];
+}
+
 
 //* Begin of tests
 const assert = require('assert')
