@@ -10,6 +10,34 @@
  */
 
 // Your code :
+function multiply(a, b){
+    var length = 0;
+    var i = "i" ;
+
+    if (b > 0 && a > 0){
+        return i.repeat(a).repeat(b).length;
+    }else if (b < 0 && a > 0){
+        b = b - b - b;
+        return -i.repeat(a).repeat(b).length;
+    } else if (a < 0 && b > 0){
+        a = a - a - a;
+        return -i.repeat(a).repeat(b).length;
+    } else if (a < 0 && b < 0){
+        b = b - b - b;
+        a = a - a - a;
+        return i.repeat(a).repeat(b).length;
+    }  else if (a === 0 || b === 0){
+        return 0;
+    }        
+
+}
+/*
+multiply(5, 3)           //our a is 5 and b is 3
+"i"                      //creating a string of "i"
+"iiiii"                  //repeating it a times or 5 
+"iiiiiiiiiiiiiii"        //repeating again b times or 3
+then we return the length which would be 15.
+*/
 
 //* Begin of tests
 const assert = require('assert')
